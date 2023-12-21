@@ -1,0 +1,2 @@
+https://www.aranacorp.com/en/generating-and-uploading-bin-files-for-esp32/
+https://docs.espressif.com/projects/esptool/en/latest/esp32/esptool/index.html
