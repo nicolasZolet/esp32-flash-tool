@@ -25,7 +25,7 @@ public class FlashHelper {
         return command;
     }
 
-    public static final String esptoolFileLocation = "program\\bin\\esptool.exe";
+    public static final String esptoolFileLocation = "src\\main\\resources\\system\\esptool.exe";
 
     public static class Commands {
         public static final String
@@ -40,8 +40,8 @@ public class FlashHelper {
                 flashSize = "--flash_size",
                 bootloaderApplicationMemoryAddress = "0xe000",
                 bootloaderMemoryAddress = "0x1000",
-                programMemoryAddress = "0x10000", //"0x10000 program\\program.bin"
-                partitionMemoryAddress = "0x8000"; //"0x8000 program\\partitions.bin"
+                programMemoryAddress = "0x10000",
+                partitionMemoryAddress = "0x8000";
     }
 
     public static class Configuration {
@@ -69,8 +69,10 @@ public class FlashHelper {
                 flashMode = "dio",
                 flashFrequency = "80m",
                 flashSize = "detect",
-                bootloaderApplicationFileAddress = "program\\bin\\boot_app0.bin",
-                bootloaderFileAddress = "program\\bin\\bootloader_dio_80m.bin";
+                bootloaderApplicationFileAddress = "src\\main\\resources\\system\\boot_app0.bin",
+//                bootloaderApplicationFileAddress = "program\\bin\\boot_app0.bin",
+                bootloaderFileAddress = "src\\main\\resources\\system\\bootloader_dio_80m.bin";
+//                bootloaderFileAddress = "program\\bin\\bootloader_dio_80m.bin";
 
 
         //editable:
